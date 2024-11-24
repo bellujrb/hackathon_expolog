@@ -69,7 +69,7 @@ let notifications = [
     color: "#FFC107",
   },
   {
-    name: "Atualização na arquitetura do modelo fix2zero",
+    name: "Atualização na arquitetura do modelo Fuel2Zero",
     description: "Painel de Inteligência Artificial",
     time: "2h atrás",
     icon: "🤖",

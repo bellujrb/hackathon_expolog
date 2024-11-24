@@ -12,7 +12,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-    title: "fix2zero",
+    title: "Fuel2Zero",
 };
 
 export default function RootLayout({ children }: Readonly<{
