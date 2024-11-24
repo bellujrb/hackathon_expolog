@@ -21,10 +21,6 @@ fix2zero is a management solution for hybrid Green Methanol plants, integrating 
 1. **Prerequisites**
    - Make sure you have NodeJS installed on your machine.
 
-   ```bash
-   https://nodejs.org/en/download/package-manager
-   ```
-
 2. **Clone the Repository**
 
    ```bash
