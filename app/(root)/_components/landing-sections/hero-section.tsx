@@ -21,17 +21,18 @@ export const Hero = () => {
           <Badge variant={"neutral"}>Transformando o CO₂ em Solução</Badge>
           <main className={cn("text-5xl md:text-7xl font-bold", syne.className)}>
             <h1 className="inline">
-              Reduza{" "}
-              <span className="inline text-verde">Emissões</span> e{" "}
+              Gerencie{" "}
+              <span className="inline text-verde">Plantas Híbridas</span> e{" "}
               <span className="inline text-roxo font-bold">Descarbonize</span>
               <br />
               o Transporte Marítimo
             </h1>
           </main>
           <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-            Na fix2zero, criamos o modelo de planta que transforma CO₂ em
-            Metanol Verde utilizando biomassa, Etanol e Hidrogênio Verde.
-            Descarbonizando o transporte marítimo com baixo custo.
+            Na fix2zero, cuidamos da gestão de plantas híbridas que transformam
+            CO₂ em Metanol Verde, utilizando biomassa, Etanol e Hidrogênio
+            Verde. Garantimos eficiência operacional, sustentabilidade e baixo
+            custo para descarbonizar o transporte marítimo.
           </p>
           <div className="space-y-4 md:space-x-4">
             <Link href="/simulacao">
