@@ -1,9 +1,10 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import L from "leaflet";
+import L, { LatLngTuple } from "leaflet"; 
 import "leaflet/dist/leaflet.css";
 
-// Configurando o marcador com ícone personalizado (SVG)
 const customIcon = new L.DivIcon({
   html: `
     <div style="
@@ -20,19 +21,20 @@ const customIcon = new L.DivIcon({
       <span style="color: white; font-size: 12px; font-weight: bold;">★</span>
     </div>
   `,
-  className: "", // Remove classes do Leaflet padrão
-  iconSize: [30, 30], // Tamanho do ícone
-  iconAnchor: [15, 30], // Ponto de ancoragem na base do marcador
-  popupAnchor: [0, -30], // Posição do popup em relação ao marcador
+  className: "",
+  iconSize: [30, 30],
+  iconAnchor: [15, 30],
+  popupAnchor: [0, -30],
 });
 
-// Dados de locais recomendados no Ceará
-const recommendedLocations: {
+interface RecommendedLocation {
   id: number;
   name: string;
-  position: [number, number]; // Tupla explícita
+  position: LatLngTuple; 
   description: string;
-}[] = [
+}
+
+const recommendedLocations: RecommendedLocation[] = [
   {
     id: 1,
     name: "Porto do Pecém",
@@ -63,8 +65,17 @@ const recommendedLocations: {
   },
 ];
 
-// Componente Mapa Interativo
-function MapaInterativo() {
+export default function OverviewDashboard() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return <div>Carregando mapa...</div>;
+  }
+
   return (
     <div className="p-4 bg-white rounded-lg">
       <h3 className="text-lg font-bold">Mapa de Locais Recomendados</h3>
@@ -82,8 +93,8 @@ function MapaInterativo() {
           {recommendedLocations.map((location) => (
             <Marker
               key={location.id}
-              position={location.position} // Tupla usada aqui
-              icon={customIcon} // Ícone personalizado (SVG)
+              position={location.position} // Tipo garantido como LatLngTuple
+              icon={customIcon}
             >
               <Popup>
                 <strong>{location.name}</strong>
@@ -93,15 +104,6 @@ function MapaInterativo() {
           ))}
         </MapContainer>
       </div>
-    </div>
-  );
-}
-
-// Tela Principal com o Mapa
-export function OverviewDashboard() {
-  return (
-    <div className="relative space-y-4">
-      <MapaInterativo />
     </div>
   );
 }

@@ -1,9 +1,12 @@
 "use client";
 
 import React, {useEffect, useState} from "react";
-import {OverviewDashboard} from "@/app/(admin)/_components/overview-dashboard";
 import {useUser} from "@clerk/nextjs";
 import {UserBox} from "@/components/user-box";
+import dynamic from "next/dynamic";
+
+const OverviewDashboard = dynamic(() => import("../_components/overview-dashboard"), { ssr: false });
+
 
 const AdminPage = () => {
 
@@ -15,7 +18,7 @@ const AdminPage = () => {
                 <div className={"p-6 flex items-center justify-between"}>
                     <div>
                         {user && (
-                            <h1 className={"text-2xl font-bold"}>Olá {user.fullName}, bem-vindo de volta 👋</h1>
+                            <p className={"text-2xl font-bold"}>Olá {user.fullName}, bem-vindo de volta 👋</p>
                         )}
                     </div>
                     <UserBox/>
