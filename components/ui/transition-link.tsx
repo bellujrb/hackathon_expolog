@@ -16,7 +16,7 @@ function sleep(ms: number): Promise<void> {
 export const TransitionLink: React.FC<TransitionLinkProps> = ({
   children,
   href,
-  transitionText = "Fuel2Zero",
+  transitionText = "Fix2Zero",
   ...props
 }) => {
   const router = useRouter();

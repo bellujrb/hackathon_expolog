@@ -12,7 +12,7 @@ export const Logo = () => {
     <div className="hidden md:flex items-center gap-x-2 text-white bg-logo p-2 rounded-xl rounded-tl-none">
       <p className={cn("font-semibold text-2xl", font.className)}
       >
-        Fuel2Zero
+        Fix2Zero
       </p>
     </div>
   )

@@ -273,7 +273,7 @@
       <option name="isIgnoringEnabled" value="true" />
       <option name="ignoredModules">
         <list>
-          <option value="Fuel2Zero-fe-fiap" />
+          <option value="Fix2Zero-fe-fiap" />
         </list>
       </option>
       <option name="ignoredPackages">

@@ -29,7 +29,7 @@ export const Hero = () => {
             </h1>
           </main>
           <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-            Na Fuel2Zero, cuidamos da gestão de plantas híbridas que transformam
+            Na Fix2Zero, cuidamos da gestão de plantas híbridas que transformam
             CO₂ em Metanol Verde, utilizando biomassa, Etanol e Hidrogênio
             Verde. Garantimos eficiência operacional, sustentabilidade e baixo
             custo para descarbonizar o transporte marítimo.
@@ -40,7 +40,7 @@ export const Hero = () => {
             </Link>
             <Link href="/pitch">
               <Button variant={"outline"}>
-                Fuel2Zero Video Pitch
+                Fix2Zero Video Pitch
                 <ArrowUpRight size={20} />
               </Button>
             </Link>

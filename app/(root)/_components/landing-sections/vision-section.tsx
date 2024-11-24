@@ -67,13 +67,13 @@ import {
             <div className="lg:w-3/4">
               <Heading
                 title="Nossa Visão Sustentável"
-                badge="Visão Fuel2Zero"
+                badge="Visão Fix2Zero"
                 classNameBadge="flex justify-center md:justify-start"
                 classNameTitle="text-center md:text-start"
                 id="visao"
               />
               <p className="mt-3 text-base md:text-lg text-muted-foreground">
-                Na Fuel2Zero, acreditamos em um futuro onde o CO₂ não é apenas um resíduo, mas uma oportunidade. Transformamos emissões em Metanol Verde, contribuindo para a descarbonização global e o avanço de combustíveis sustentáveis.
+                Na Fix2Zero, acreditamos em um futuro onde o CO₂ não é apenas um resíduo, mas uma oportunidade. Transformamos emissões em Metanol Verde, contribuindo para a descarbonização global e o avanço de combustíveis sustentáveis.
               </p>
               <p className="mt-3 text-base md:text-lg text-muted-foreground">
                 Nossa missão é integrar sustentabilidade e eficiência econômica com tecnologias avançadas, conectando plantas de Etanol e Hidrogênio Verde para transformar o mundo.

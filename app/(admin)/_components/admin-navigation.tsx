@@ -55,7 +55,7 @@ export const AdminNavigation = ({className}: NavigationProps) => {
             <div className="flex h-full max-h-screen flex-col gap-2">
                 <div className="flex h-14 items-center border-b px-6 lg:h-[60px] justify-between">
                     <Link href="/" className="flex items-center gap-2 font-semibold">
-                        {isExpanded && <span className="text-3xl">Fuel2Zero</span>}
+                        {isExpanded && <span className="text-3xl">Fix2Zero</span>}
                     </Link>
                     <Button
                         variant={"secondary"}

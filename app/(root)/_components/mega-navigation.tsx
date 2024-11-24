@@ -35,7 +35,7 @@ export function MegaNavigation({ className }: NavigationProps) {
                   <div className="flex h-full w-full select-none flex-col justify-end rounded-md bg-logo p-6 no-underline outline-none focus:shadow-md">
                     <Slack className="h-6 w-6 text-white" />
                     <div className="mb-2 mt-4 text-lg font-medium text-white">
-                      Fuel2Zero
+                      Fix2Zero
                     </div>
                     <p className="text-sm leading-tight text-muted/70 dark:text-muted">
                       Utilizamos IA para analisar e interpretar dados,
